@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Spotify Playlist Saver</title>
+{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+    <div class="playlist_box">
+        <h1>Playlists Fetched</h1>
+        <form action="/playlists" method="post">
+        <table>
+            {% for name in playlist_names %}
+            <tr>
+                <td>{{ name }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <label for="submittedName">Enter name of playlist:</label>
+        <input type="text" id="submittedName" name="submittedName">
+        <input type="submit" value="Save">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Playlist Saver</title>
+{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+    <div class="login_box">
+        <h1>Hi There!</h1>
+        <p>Save all temporary playlists in your Spotify library, such as Discover Weekly, 
+            Daylists, Daily Mixes, etc. </p>
+        <form action='/login' method="post">
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</div>
+{% endblock %}
