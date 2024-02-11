@@ -42,16 +42,23 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     padding: 12px 20px;
-    background-color: #16843c;
+    background-color: #1ED760;
+    box-shadow: 0 0 15px #39ff14;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 input[type="submit"]:focus {
     outline: none;
 }
 
+table{
+    border-radius: 15px;
+}
+
 tr:hover{
     background-color: #1ED760;
     color: black;
+    transition: all 0.2s ease 0s
 }
 
 a{
@@ -61,6 +68,7 @@ a{
 
 a:hover{
     text-decoration: underline;
+    transition: all 0.2s ease 0s
 }
 
 .wrapper{
@@ -108,4 +116,15 @@ a:hover{
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+    margin: 20px 0 20px 0;
+}
+
+.playlist_box input[type="text"]{
+    padding: 13px;
+    margin: 20px 0 0 0;
+}
+
+.playlist_box input[type="submit"]{
+    padding: 13px;
+    margin: 20px 0 0 0;
 }
